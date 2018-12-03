@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bg_power"
+	android:padding="10dp"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView 
+    	android:layout_height="@dimen/_70sdp"
+    	android:id="@+id/imageView1" 
+    	android:layout_width="@dimen/_70sdp"
+
+    	android:layout_alignParentTop="true" 
+    	android:layout_centerHorizontal="true">
+    </ImageView>
+
+	<io.gloxey.cfv.CFTextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/imageView1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="2dp"
+		android:ellipsize="marquee"
+		android:text="TextView"
+		android:textColor="@color/C_b3b3b3"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		app:font_name="@string/fon"></io.gloxey.cfv.CFTextView>
+	
+	
+</RelativeLayout>

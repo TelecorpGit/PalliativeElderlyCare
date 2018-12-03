@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+
+        <io.gloxey.cfv.CFTextView
+            android:id="@+id/name_s3_hybrid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="0.6"
+            android:gravity="center|left"
+            android:text="S3 HYbrid"
+            android:textColor="@color/C_b3b3b3"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+
+
+        <io.gloxey.cfv.CFButton
+            android:id="@+id/btn_bluetooth"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:background="@drawable/bg_d_setting"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="ทำการเชื่อมต่อ"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@color/C_b3b3b3" />
+
+
+
+</LinearLayout>

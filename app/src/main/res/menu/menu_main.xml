@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_blood_pressure"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_blood_pressure"
+        app:showAsAction="ifRoom"/>
+</menu>
+
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_favorite"-->
+        <!--android:orderInCategory="300"-->
+        <!--android:title="User"-->
+        <!--android:icon="@drawable/ic_lock_48dp"-->
+        <!--app:showAsAction="ifRoom"></item>-->
+
+<!--</menu>-->

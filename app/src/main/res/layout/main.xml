@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<!--<View-->
+			<!--android:layout_width="0dp"-->
+			<!--android:layout_gravity="center"-->
+			<!--android:layout_weight="0.05"-->
+			<!--android:layout_height="@dimen/_1sdp"-->
+			<!--android:background="@color/white200" />-->
+
+			<!--<ImageView-->
+			<!--android:layout_width="0dp"-->
+			<!--android:layout_height="@dimen/_95sdp"-->
+			<!--android:layout_weight="0.15"-->
+			<!--android:src="@drawable/redban"-->
+			<!--android:layout_gravity="left"/>-->
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="@dimen/_1sdp"
+
+				android:layout_gravity="center"
+				android:layout_weight="0.8"
+
+				android:background="@color/white200" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/_10sdp"
+		android:paddingRight="@dimen/_10sdp">
+
+		<io.gloxey.cfv.CFTextView
+			android:id="@+id/name_user_"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:text="Wristband "
+			android:textColor="@color/C_b3b3b3"
+			android:textSize="18sp"
+			app:font_name="@string/fon" />
+
+		<io.gloxey.cfv.CFTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:layout_gravity="left|center"
+			android:layout_marginLeft="@dimen/_5sdp"
+			android:layout_marginRight="@dimen/_5sdp"
+			android:gravity="center"
+			android:text="|"
+
+			android:textColor="@color/C_b3b3b3"
+			android:textSize="18sp"
+			app:font_name="@string/fon" />
+
+		<io.gloxey.cfv.CFTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:gravity="center"
+			android:text="วัดการเต้นของหัวใจและความดัน"
+			android:textColor="@color/C_b3b3b3"
+			android:textSize="18sp"
+			app:font_name="@string/fon" />
+
+		<io.gloxey.cfv.CFTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" "
+			app:font_name="@string/fon" />
+	</LinearLayout>
+
+	<GridView 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/gridView1" 
+    	android:layout_width="match_parent" 
+    	android:numColumns="auto_fit"
+    	android:horizontalSpacing="10dp"
+    	android:verticalSpacing="10dp"
+		android:padding="@dimen/_10sdp">
+    </GridView>
+</LinearLayout>

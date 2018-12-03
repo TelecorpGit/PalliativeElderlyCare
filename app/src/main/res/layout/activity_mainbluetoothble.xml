@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbardetail_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <io.gloxey.cfv.CFTextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="0.7"
+            android:gravity="center|left"
+            android:text="อุปกรณ์ที่เชื่อมต่อ"
+            android:textColor="@color/C_b3b3b3"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+
+
+        <io.gloxey.cfv.CFTextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+
+            android:gravity="center"
+            android:textColor="@color/C_b3b3b3"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bluetooth_connext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+
+
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/_10sdp">
+
+
+        <io.gloxey.cfv.CFTextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="0.7"
+            android:gravity="center|left"
+            android:text="อุปกรณ์ที่ค้นหาเจอ"
+            android:textColor="@color/C_b3b3b3"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+
+
+        <io.gloxey.cfv.CFTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textColor="@color/colortext1"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:font_name="@string/fron" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_loading"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_loading"
+        android:visibility="invisible" />
+
+    <io.gloxey.cfv.CFTextView
+        android:id="@+id/search_bluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="กำลังค้นหาอุปกรณ์"
+        android:textColor="@color/C_b3b3b3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font_name="@string/fron" />
+
+    <ListView
+        android:id="@+id/list_device"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:divider="@null"
+
+        android:dividerHeight="10dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+</LinearLayout>
+

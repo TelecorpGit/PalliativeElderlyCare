@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/set_onclick_bg"
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+
+        android:padding="2dip"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <io.gloxey.cfv.CFTextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:maxLines="2"
+        android:text="Rihanna Love the way lie Rihanna Love the way lie"
+        android:textColor="@color/C_b3b3b3"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:font_name="@string/fon" />
+
+    <!-- Artist Name -->
+    <io.gloxey.cfv.CFTextView
+        android:id="@+id/artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:maxLines="3"
+        android:text="Just gona stand there and ..."
+        android:textColor="@color/C_b3b3b3"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        app:font_name="@string/fon" />
+
+    <io.gloxey.cfv.CFTextView
+        android:id="@+id/count_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:textColor="@color/C_b3b3b3"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        app:font_name="@string/fon" />
+
+
+</RelativeLayout>

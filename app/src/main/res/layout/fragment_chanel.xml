@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#29333E">
+
+    <View
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_weight="0.1">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress"
+                style="@style/SpinKitView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_blue"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher_h" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_blue"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <io.gloxey.cfv.CFTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textSize="14sp"
+                app:font_name="@string/fron"
+                android:textColor="@color/C_b3b3b3"/>
+
+            <io.gloxey.cfv.CFTextView
+                android:id="@+id/txt_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                app:font_name="@string/fron"
+                android:textColor="@color/C_b3b3b3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_idle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <io.gloxey.cfv.CFTextView
+                android:id="@+id/txt_rssi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ddd"
+                app:font_name="@string/fron"
+                android:textColor="@color/C_b3b3b3"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</TableLayout>
